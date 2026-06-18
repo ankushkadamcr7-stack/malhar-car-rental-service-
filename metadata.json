@@ -1,0 +1,6 @@
+{
+  "name": "Malhar Car Rental Service",
+  "description": "Premium car rental & taxi service in Ratnagiri. Offering local sightseeing, outstation cabs, and self-drive cars.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
