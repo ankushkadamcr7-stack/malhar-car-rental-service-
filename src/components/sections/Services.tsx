@@ -1,4 +1,4 @@
-import { CarFront, Key, Plane, Briefcase, Map as MapIcon, UserCircle } from "lucide-react";
+import { CarFront, Key, Plane, Briefcase, Map as MapIcon, UserCircle, ArrowRight } from "lucide-react";
 
 export default function Services() {
   const services = [
@@ -58,7 +58,7 @@ export default function Services() {
             return (
               <div 
                 key={index} 
-                className="group p-8 rounded-2xl border border-slate-100 bg-white hover:border-transparent hover:shadow-2xl transition-all duration-300 relative overflow-hidden"
+                className="group flex flex-col p-8 rounded-2xl border border-slate-100 bg-white hover:border-transparent hover:shadow-2xl transition-all duration-300 relative overflow-hidden"
               >
                 {/* Hover Accent Bar */}
                 <div className="absolute top-0 left-0 w-full h-1 bg-accent transform -translate-y-full group-hover:translate-y-0 transition-transform duration-300"></div>
@@ -68,9 +68,17 @@ export default function Services() {
                 </div>
                 
                 <h3 className="text-xl font-bold text-primary mb-3">{service.title}</h3>
-                <p className="text-slate-600 leading-relaxed group-hover:text-slate-700">
+                <p className="text-slate-600 leading-relaxed group-hover:text-slate-700 mb-6 flex-1">
                   {service.description}
                 </p>
+                <a 
+                  href={`https://wa.me/917972556962?text=${encodeURIComponent(`Hi Malhar Car Rental, I would like to learn more about the ${service.title} service.`)}`}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-flex items-center gap-2 text-primary font-bold hover:text-accent transition-colors mt-auto w-fit"
+                >
+                  Learn More <ArrowRight size={18} />
+                </a>
               </div>
             );
           })}

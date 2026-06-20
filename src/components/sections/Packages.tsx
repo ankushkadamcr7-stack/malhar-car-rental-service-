@@ -35,12 +35,19 @@ export default function Packages() {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-6">
           {destinations.map((dest, idx) => (
-            <div key={idx} className="bg-white/10 hover:bg-white/20 border border-white/10 rounded-xl p-4 flex items-center gap-4 transition-colors">
-              <div className="bg-accent/20 p-2 rounded-lg text-accent shrink-0">
+            <a 
+              href={`https://wa.me/917972556962?text=${encodeURIComponent(`Hi Malhar Car Rental, I would like to learn more about the ${dest} package.`)}`}
+              target="_blank"
+              rel="noreferrer"
+              key={idx} 
+              className="bg-white/10 hover:bg-white/20 border border-white/10 rounded-xl p-4 flex items-center gap-4 transition-colors group cursor-pointer"
+            >
+              <div className="bg-accent/20 p-2 rounded-lg text-accent shrink-0 group-hover:bg-accent group-hover:text-primary transition-colors">
                 <MapPin size={20} />
               </div>
-              <span className="font-medium text-slate-100">{dest}</span>
-            </div>
+              <span className="font-medium text-slate-100 flex-1">{dest}</span>
+              <span className="text-xs font-bold text-accent opacity-0 group-hover:opacity-100 transition-opacity">Book</span>
+            </a>
           ))}
           <div className="bg-accent text-primary rounded-xl p-4 flex items-center justify-center font-bold">
             All India Pickup & Drop Available

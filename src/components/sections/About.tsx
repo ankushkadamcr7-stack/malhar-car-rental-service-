@@ -8,18 +8,11 @@ export default function About() {
           
           {/* Images Grid */}
           <div className="relative">
-            <div className="grid grid-cols-2 gap-4">
-              <img 
-                src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&q=80&w=800" 
-                alt="Ratnagiri Road" 
-                className="rounded-2xl shadow-xl w-full h-64 object-cover mt-12"
-              />
-              <img 
-                src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&q=80&w=800" 
-                alt="Premium Taxi" 
-                className="rounded-2xl shadow-xl w-full h-80 object-cover"
-              />
-            </div>
+            <img 
+              src="https://tripandtales.com/wp-content/uploads/2025/08/Ratnadurg-Fort%E2%80%8B.jpg" 
+              alt="Ratnagiri" 
+              className="rounded-2xl shadow-xl w-full h-80 md:h-[500px] object-cover"
+            />
             {/* Badge */}
             <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-2xl shadow-2xl border border-slate-100 hidden md:inline-flex flex-col items-center justify-center">
               <span className="text-4xl font-serif font-bold text-primary">10+</span>
