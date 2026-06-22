@@ -49,9 +49,18 @@ export default function Packages() {
               <span className="text-xs font-bold text-accent opacity-0 group-hover:opacity-100 transition-opacity">Book</span>
             </a>
           ))}
-          <div className="bg-accent text-primary rounded-xl p-4 flex items-center justify-center font-bold">
-            All India Pickup & Drop Available
-          </div>
+          <a 
+            href={`https://wa.me/917972556962?text=${encodeURIComponent(`Hi Malhar Car Rental, I would like to learn more about the All India Pick And Drop Service From Ratnagiri.`)}`}
+            target="_blank"
+            rel="noreferrer"
+            className="bg-accent hover:bg-accent/90 text-primary rounded-xl p-4 flex items-center gap-4 transition-colors group cursor-pointer"
+          >
+            <div className="bg-primary/10 p-2 rounded-lg text-primary shrink-0 transition-colors">
+              <MapPin size={20} />
+            </div>
+            <span className="font-bold flex-1 text-sm leading-tight">All India Pick And Drop Service From Ratnagiri</span>
+            <span className="text-xs font-bold text-primary opacity-0 group-hover:opacity-100 transition-opacity">Book</span>
+          </a>
         </div>
       </div>
     </section>

@@ -8,11 +8,13 @@ export default function About() {
           
           {/* Images Grid */}
           <div className="relative">
-            <img 
-              src="https://tripandtales.com/wp-content/uploads/2025/08/Ratnadurg-Fort%E2%80%8B.jpg" 
-              alt="Ratnagiri" 
-              className="rounded-2xl shadow-xl w-full h-80 md:h-[500px] object-cover"
-            />
+            <div className="rounded-2xl shadow-xl w-full h-80 md:h-[500px] overflow-hidden bg-slate-100 flex items-center justify-center p-8">
+              <img 
+                src="/malharcarrentallogo.png.jpeg" 
+                alt="Malhar Car Rental Logo" 
+                className="w-full h-full object-contain"
+              />
+            </div>
             {/* Badge */}
             <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-2xl shadow-2xl border border-slate-100 hidden md:inline-flex flex-col items-center justify-center">
               <span className="text-4xl font-serif font-bold text-primary">10+</span>

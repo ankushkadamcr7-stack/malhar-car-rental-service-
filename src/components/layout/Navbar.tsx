@@ -49,8 +49,8 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
           <Link to="/" className="flex items-center gap-2 group">
-            <div className="bg-accent text-primary p-2 rounded-full group-hover:scale-110 transition-transform">
-              <Car size={24} className="stroke-2" />
+            <div className="w-24 h-12 md:w-32 rounded-lg group-hover:scale-105 transition-transform overflow-hidden flex items-center justify-center shrink-0">
+              <img src="/malharcarrentallogo.png.jpeg" alt="Malhar Car Rental Logo" className="w-full h-full object-cover" />
             </div>
             <div className="flex flex-col">
               <span className="font-serif font-bold text-xl md:text-2xl leading-none">MALHAR</span>

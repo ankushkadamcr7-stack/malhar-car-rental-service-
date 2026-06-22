@@ -9,8 +9,8 @@ export default function Footer() {
           {/* Brand */}
           <div className="space-y-4">
             <Link to="/" className="flex items-center gap-2 group inline-flex mb-2">
-              <div className="bg-accent text-primary p-2 rounded-full">
-                <Car size={24} className="stroke-2" />
+              <div className="w-24 h-12 md:w-32 rounded-lg overflow-hidden flex items-center justify-center shrink-0">
+                <img src="/malharcarrentallogo.png.jpeg" alt="Malhar Car Rental Logo" className="w-full h-full object-cover" />
               </div>
               <div className="flex flex-col text-white">
                 <span className="font-serif font-bold text-xl leading-none">MALHAR</span>

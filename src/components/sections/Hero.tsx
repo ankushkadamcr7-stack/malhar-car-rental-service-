@@ -73,7 +73,8 @@ export default function Hero() {
               const formData = new FormData(e.currentTarget);
               const pickup = formData.get("pickup");
               const drop = formData.get("drop");
-              const message = `Hello, I'm looking for a ride from ${pickup} to ${drop}.`;
+              const vehicle = formData.get("vehicle");
+              const message = `Hello, I'm looking for a ride from ${pickup} to ${drop} in a ${vehicle}.`;
               window.open(`https://wa.me/917972556962?text=${encodeURIComponent(message)}`, '_blank');
             }}>
               <div className="space-y-1">
@@ -94,11 +95,31 @@ export default function Hero() {
                 <label className="text-xs text-slate-300 ml-1">Vehicle Type</label>
                 <div className="relative">
                   <Car className="absolute left-3 top-1/2 -translate-y-1/2 text-slate-400" size={18} />
-                  <select className="w-full bg-white/90 text-slate-900 rounded-xl px-10 py-3 focus:outline-none focus:ring-2 focus:ring-accent appearance-none">
-                    <option>Hatchback (Indica/Swift)</option>
-                    <option>Sedan (Dzire/Etios)</option>
-                    <option>SUV (Innova/Ertiga)</option>
-                    <option>Tempo Traveller</option>
+                  <select name="vehicle" required className="w-full bg-white/90 text-slate-900 rounded-xl px-10 py-3 focus:outline-none focus:ring-2 focus:ring-accent appearance-none">
+                    <option value="">Select a Vehicle</option>
+                    <optgroup label="Hatchback">
+                      <option value="Swift (Hatchback)">Swift</option>
+                      <option value="Maruti Suzuki Wagon R (Hatchback)">Maruti Suzuki Wagon R</option>
+                      <option value="TATA Altroz (Hatchback)">TATA Altroz</option>
+                      <option value="TATA Tiago (Hatchback)">TATA Tiago</option>
+                    </optgroup>
+                    <optgroup label="Sedan">
+                      <option value="Maruti Suzuki Dzire (Sedan)">Maruti Suzuki Dzire</option>
+                      <option value="Hyundai Aura (Sedan)">Hyundai Aura</option>
+                      <option value="Toyota Etios (Sedan)">Toyota Etios</option>
+                      <option value="Hyundai Xcent (Sedan)">Hyundai Xcent</option>
+                    </optgroup>
+                    <optgroup label="SUV">
+                      <option value="Toyota Innova (SUV)">Toyota Innova</option>
+                      <option value="Maruti Suzuki Ertiga (SUV)">Maruti Suzuki Ertiga</option>
+                      <option value="Toyota Innova Crysta (SUV)">Toyota Innova Crysta</option>
+                      <option value="Chevrolet Tavera (SUV)">Chevrolet Tavera</option>
+                      <option value="TATA Sumo (SUV)">TATA Sumo</option>
+                    </optgroup>
+                    <optgroup label="Tempo Traveller">
+                      <option value="Tempo Traveller">Tempo Traveller</option>
+                      <option value="Urbania Tempo Traveller">Urbania Tempo Traveller</option>
+                    </optgroup>
                   </select>
                 </div>
               </div>
