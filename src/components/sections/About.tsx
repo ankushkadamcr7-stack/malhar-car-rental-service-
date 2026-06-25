@@ -8,11 +8,11 @@ export default function About() {
           
           {/* Images Grid */}
           <div className="relative">
-            <div className="rounded-2xl shadow-xl w-full h-80 md:h-[500px] overflow-hidden bg-slate-100 flex items-center justify-center p-8">
+            <div className="rounded-2xl shadow-xl w-full h-80 md:h-[500px] overflow-hidden bg-slate-100 flex items-center justify-center">
               <img 
-                src="/malharcarrental.png.png" 
-                alt="Malhar Car Rental Logo" 
-                className="w-full h-full object-contain scale-[2] md:scale-[2.5]"
+                src="https://hblimg.mmtcdn.com/content/hubble/img/tvdestinationimages/mmt/activities/m_Ganapatipule_tv_destination_img_3_l_667_1000.jpg" 
+                alt="Ganapatipule" 
+                className="w-full h-full object-cover"
               />
             </div>
             {/* Badge */}
