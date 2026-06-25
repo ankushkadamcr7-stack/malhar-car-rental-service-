@@ -10,9 +10,9 @@ export default function About() {
           <div className="relative">
             <div className="rounded-2xl shadow-xl w-full h-80 md:h-[500px] overflow-hidden bg-slate-100 flex items-center justify-center p-8">
               <img 
-                src="/malharcarrentallogo.png.jpeg" 
+                src="/malharcarrental.png.png" 
                 alt="Malhar Car Rental Logo" 
-                className="w-full h-full object-contain"
+                className="w-full h-full object-contain scale-[2] md:scale-[2.5]"
               />
             </div>
             {/* Badge */}

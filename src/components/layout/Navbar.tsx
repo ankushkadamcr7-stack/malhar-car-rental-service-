@@ -43,18 +43,22 @@ export default function Navbar() {
     <nav
       className={cn(
         "fixed w-full z-50 transition-all duration-300",
-        scrolled ? "bg-primary/95 backdrop-blur-md text-white shadow-lg py-3" : "bg-transparent text-white py-5"
+        scrolled ? "bg-primary/95 backdrop-blur-md text-white shadow-lg py-2" : "bg-transparent text-white py-3"
       )}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
-          <Link to="/" className="flex items-center gap-2 group">
-            <div className="w-24 h-12 md:w-32 rounded-lg group-hover:scale-105 transition-transform overflow-hidden flex items-center justify-center shrink-0">
-              <img src="/malharcarrentallogo.png.jpeg" alt="Malhar Car Rental Logo" className="w-full h-full object-cover" />
+          <Link to="/" className="flex items-center group">
+            <div className="w-40 h-20 md:w-56 md:h-28 rounded-lg group-hover:scale-105 transition-transform flex items-center justify-center shrink-0 -ml-2 md:-ml-4">
+              <img src="/malharcarrental.png.png" alt="Malhar Car Rental Logo" className="w-full h-full object-contain scale-[2.5] md:scale-[3]" />
             </div>
-            <div className="flex flex-col">
-              <span className="font-serif font-bold text-xl md:text-2xl leading-none">MALHAR</span>
-              <span className="text-[10px] md:text-xs tracking-widest text-accent font-semibold uppercase">Car Rental Service</span>
+            <div className="flex flex-col drop-shadow-md -ml-2 md:-ml-4">
+              <span className="font-serif font-extrabold text-2xl md:text-3xl tracking-wide leading-none text-white uppercase">
+                Malhar
+              </span>
+              <span className="text-[10px] md:text-xs tracking-[0.15em] font-bold text-yellow-500 uppercase mt-1">
+                Car Rental Service
+              </span>
             </div>
           </Link>
 
