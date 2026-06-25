@@ -49,14 +49,14 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
           <Link to="/" className="flex items-center group">
-            <div className="w-40 h-20 md:w-56 md:h-28 rounded-lg group-hover:scale-105 transition-transform flex items-center justify-center shrink-0 -ml-2 md:-ml-4">
-              <img src="/malharcarrental.png.png" alt="Malhar Car Rental Logo" className="w-full h-full object-contain scale-[2.5] md:scale-[3]" />
+            <div className="w-24 h-16 md:w-36 md:h-24 group-hover:scale-105 transition-transform flex items-center justify-center shrink-0">
+              <img src="/malharcarrental.jpg.png" alt="Malhar Car Rental Logo" className="w-full h-full object-contain scale-[2.2] md:scale-[2.5]" />
             </div>
-            <div className="flex flex-col drop-shadow-md -ml-2 md:-ml-4">
-              <span className="font-serif font-extrabold text-2xl md:text-3xl tracking-wide leading-none text-white uppercase">
+            <div className="flex flex-col drop-shadow-md justify-center -ml-2 md:-ml-4">
+              <span className="font-serif font-bold text-3xl md:text-4xl tracking-wide leading-none text-white uppercase">
                 Malhar
               </span>
-              <span className="text-[10px] md:text-xs tracking-[0.15em] font-bold text-yellow-500 uppercase mt-1">
+              <span className="text-[11px] md:text-sm tracking-[0.15em] font-bold text-[#eab308] uppercase mt-1 md:mt-1.5">
                 Car Rental Service
               </span>
             </div>

@@ -8,15 +8,15 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 md:gap-8 mb-12">
           {/* Brand */}
           <div className="space-y-4">
-            <Link to="/" className="flex items-center group inline-flex mb-2">
-              <div className="w-40 h-20 md:w-56 md:h-28 rounded-lg flex items-center justify-center shrink-0 bg-white/5 -ml-2 md:-ml-4">
-                <img src="/malharcarrental.png.png" alt="Malhar Car Rental Logo" className="w-full h-full object-contain scale-[2.5] md:scale-[3]" />
+            <Link to="/" className="flex flex-col items-start group inline-flex mb-2 gap-3">
+              <div className="w-32 h-20 md:w-48 md:h-28 rounded-md flex items-center justify-center shrink-0 bg-white/5">
+                <img src="/malharcarrental.jpg.png" alt="Malhar Car Rental Logo" className="w-full h-full object-contain scale-[1.8] md:scale-[2]" />
               </div>
-              <div className="flex flex-col drop-shadow-md -ml-2 md:-ml-4">
-                <span className="font-serif font-extrabold text-2xl md:text-3xl tracking-wide leading-none text-white uppercase">
+              <div className="flex flex-col drop-shadow-md justify-center">
+                <span className="font-serif font-bold text-3xl md:text-4xl tracking-wide leading-none text-white uppercase">
                   Malhar
                 </span>
-                <span className="text-[10px] md:text-xs tracking-[0.15em] font-bold text-yellow-500 uppercase mt-1">
+                <span className="text-[11px] md:text-sm tracking-[0.15em] font-bold text-[#eab308] uppercase mt-1 md:mt-1.5">
                   Car Rental Service
                 </span>
               </div>
